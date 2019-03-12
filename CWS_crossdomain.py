@@ -5,7 +5,6 @@ import collections
 import pickle as pkl
 from utils import *
 import os
-from data_utils import readfilelc, readfilelcul
 from model import CWScnncrf
 class Config(object):
     dataset = 'upuc'
