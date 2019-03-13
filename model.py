@@ -9,17 +9,14 @@ class CWScnncrf(object):
     def __init__(self, config):
         self.vocab_size = config.vocab_size#0:PAD，1:UNK
         self.emb_dim = config.emb_dim
-        self.pro_dim = config.pro_dim
         self.output_dim = config.output_dim#label class num
         self.use_pretrain_emb = config.use_pretrain_emb
         self.pretrain_emb = config.pretrain_emb
         self.emb_trainable = config.emb_trainable
         self.batch_size = config.batch_size
-        self.reg = config.reg
         self.maxlen = config.maxlen
         self.filter_sizes = config.filter_sizes
         self.num_filters = config.num_filters
-        self.clip_norm = config.clip_norm
         self.dropSet = config.dropSet
         self.config = config
 
